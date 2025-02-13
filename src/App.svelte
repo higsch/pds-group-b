@@ -12,7 +12,7 @@
   let lockedTime = $state();
   let clockColor = $state('black');
 
-  let correctTime = 40;
+  let correctTime = 60;
 
   let showResult = $state(false);
 
@@ -92,7 +92,7 @@ circlesegment = arcgenerator({
     lockedTime = angleToMinutes(lockedAngle);
 
     // Vergleichswert (12:45 = 270° Minutenzeiger)
-    const correctTime = 40;
+    const correctTime = 60;
     const correctAngle = (correctTime / 60) * 2 * Math.PI; // 45 Minuten in Radiant
 
     // Richtige Uhrzeit anzeigen
@@ -174,6 +174,7 @@ circlesegment = arcgenerator({
   #result {
     display: flex;
     flex-direction: column;
+    color: white;
   }
   main {
     display: flex;
@@ -182,6 +183,7 @@ circlesegment = arcgenerator({
     justify-content: center;
     font-family: Outfit;
     gap: 5px;
+   
 
   }
 </style>
